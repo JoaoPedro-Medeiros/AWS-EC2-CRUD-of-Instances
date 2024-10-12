@@ -15,7 +15,7 @@ class Menu():
         label1.grid(column=0, row=0)
 
         for key, opt in menu_options.items():
-            match(opt):
+            match opt:
                 case '__create':
                     b = Button(self.__window, text=f'{key}', command=self.__create)
                     b.grid(row=1,column=0, )
